@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color:rgb(87, 87, 219);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.cities {
+  list-style-type: none;
+  position:absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.listItem:hover {
+  cursor: pointer;
+  background-color: rgb(161, 158, 158);
+  color: white;
+}
+
+#weatherContainer {
+  display:flex;
+  justify-content: space-between;
+  /* margin-top: 5%;  */
+}
+
+#mainWeather,
+#today,
+#sevenDaysForecast {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.6);
+}
+
+#mainWeather {
+  width:47%;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.temp {
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+  display: block;
+}
+
+#carouselContainer,
+#daysContainer {
+  margin: 0 10px 0 10px;
+}
+
+#carouselContainer {
+  max-width: 100%;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px 0px 10px;
+  margin: 30px 0 10px 0;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.hourlyCard,
+.dailyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#detailedWeather {
+  display: flex;
+  flex-direction: column;
+  width:47%;
+  border: 1px solid transparent;
+  justify-content: space-between;
+}
+
+#today {
+  display:flex;
+  flex-direction: column;
+}
+
+#todayDetails {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#sunriseSunset,
+#lowHigh,
+#windSpeed {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+#windSpeed {
+  align-items: center;
+}
+
+#currentWeather, 
+.sevenDaysList {
+  margin: 20px 0 10px 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+#currentWeather {
+  justify-content: space-evenly;
+}
+
+.weatherCode,
+.weatherHumidity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sevenDaysTitle {
+  font-size: medium;
+  font-weight: 200px;
+}
+
+.sevenDaysList {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.weekDay {
+  margin-bottom: 10px;
+}
+
+.rangeTemp {
+  font-size: smaller;
+}
+
+.form-control {
+  margin-bottom: 4px;
+}
+
+
+
+
